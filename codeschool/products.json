@@ -1,0 +1,30 @@
+[
+		{
+			name : "Dodecahedron",
+			price : 2,
+			description : 'primero pruduto....',
+			canPurchase : true,
+			reviews: [
+				{
+					stars : 5,
+					body: "I love this product",
+					author : "Ythalo Rossy",
+					createdOn: Date.now()
+				},
+				{
+					stars : 3,
+					body: "Is good product",
+					author : "Mary Ruana",
+					createdOn: Date.now()
+				}
+
+			]
+		},
+		{
+			name : "Pentagonal gems",
+			price : 5.95,
+			description : " . . .  segundo...  .. ",
+			canPurchase : true,
+			reviews : []
+		}
+	]

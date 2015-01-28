@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="store">
+	<head>
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script type="text/javascript" src="angular.min.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+		<script type="text/javascript" src="products.js"></script>
+	</head>
+	<body ng-controller="StoreController as storeController">
+
+		<div ng-repeat="product in storeController.products | orderBy:'price'">
+			<!-- examples of include -->
+			<!-- <h3 ng-include="'product-title.html'"></h3> -->
+			<product-title></product-title>
+
+			<product-panels ng-controller="PanelController as panel"></product-panels>
+
+			<button ng-show="product.canPurchase">Add to Cart</button>
+		</div>
+	</body>
+</html>

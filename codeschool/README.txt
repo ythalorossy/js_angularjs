@@ -1,0 +1,1 @@
+rodar em servidor de aplicação para simular requisições AJAX
